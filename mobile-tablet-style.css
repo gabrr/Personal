@@ -1,0 +1,310 @@
+@media(max-width:767px){
+    .large-nav{
+        display: none;
+    }
+}
+/*navigation*/
+#toggle{
+    float: right;
+    margin: 15px 20px 0 0;
+}
+.bar1, .bar2, .bar3{
+    width: 30px;
+    height: 2px;
+    margin: 5px 0px;
+    background: #888;
+    transition: .6s;
+}
+.activated .bar1{
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.activated .bar2{
+    opacity: 0;
+}
+.activated .bar3{
+    transform: rotate(225deg) translate(3px, 0px);
+}
+.mobile-logo{
+    margin:14px 0 0 18px;
+    float: left;
+    font-size: 1.4em;
+    color: #777;
+}
+@keyframes navbarDown{
+    from{height: 0;}to{height: 56px;}
+}
+.mobile-navbar-activated{
+    width: 100%;
+    height: 56px;
+    position: fixed;
+/** background-color: #fff; **/
+    animation: navbarDown;
+    animation-iteration-count: 1;
+    animation-duration: .6s; 
+}
+.mobile-nav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    transition: .5s;
+    z-index: 1;
+}
+.mobile-nav-activated{
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+}
+
+.mobile-nav-links{
+    padding-top: 10vh;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+.mobile-nav-links{
+    display: none;
+}
+.mobile-nav-links ul{
+    list-style: none;
+    display: block;
+    transition: 2s;
+}
+.mobile-nav-links li{
+    padding: 39px;
+}
+.mobile-nav-links a{
+    padding: 25px;
+    text-decoration: none;
+    color: #444;
+}
+
+.mobile-nav-links .hire-button button{
+    color: #fff;
+    background-color: #888;
+    padding: 16px 0;
+}
+
+.mobile-nav-links .hire-button a{
+    background-color: rgba(0,0,0,0);
+    border: .6px solid #888;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: 'Shadows Into Light Two', cursive;
+    padding: 10px 29px;
+}
+/**STARTS THE IMAGE BACKGROUND AND ITS ELEMENTS**/
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/apartment-chair.jpg);
+    background-position: bottom;
+    background-size:cover;
+    display: table;
+    transition-delay: 1s;
+    transition: 1s;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+@media(max-width:768px){
+.main-logo{
+    width: max-content;
+    margin: 22vh auto;
+    text-align: center;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+.main-logo h1{
+    margin: auto;
+    font-size: 52px;
+    width: 73%;
+    color: #777;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #777;
+    font-family: 'Shadows Into Light Two', cursive;
+    }
+    .main-logo p{
+    margin: 10px;
+    font-size: 16px;
+    color: #777;
+    font-weight: bolder;
+    }
+    #vertical-navigation ul{
+        display: none;
+    }
+    
+}
+@keyframes upAndDown {
+    from{transform: translateY(10px);}
+    to{transform: translateY(-10px);}
+}
+.angle-down-outer{
+    text-align: center;
+    margin-top:  130px;
+}
+.angle-down-outer img{
+    width: 38px;
+    animation: upAndDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/**for all sections**/
+@media(max-width: 768px){
+section{
+    margin: auto;
+    padding: 70px 0;
+    color: #888;
+    /**color: #978f7a;**/
+    text-align: center;
+    width: 100%;
+}
+section h2{
+    font-size: 23px;
+}
+.sections-content{
+    text-align: left;
+    padding: 10px 5% 50px;
+}
+/**for home**/
+#home .image-sofa-macbook{
+    width: 100%;
+    opacity:.6;
+    margin: 50px 0;
+}
+.bottom-icon{
+    width: 27px;
+    opacity: .6;
+}
+/**for about**/
+#about{
+background-color: #e9e9e9;
+}
+#about .image-me{
+    text-align: center;
+    width: 100%;
+}
+#about .image-me img{
+    width: 70%;
+    border-radius: 100%;
+    margin: 85px 0 40px;
+    opacity: .7;
+}
+/**for portfolio**/
+#portfolio{
+    background-color: #e9e9e9;
+}
+#portfolio h3{
+    padding-top: 45px;
+}
+.project1, .project2, .project3{
+    height: 220px;
+    width: 100%;
+    background-color: #f7f5f2;
+    margin: 50px 0;
+    text-align: center;
+    opacity: .7;
+    box-shadow: 10px 9px 22px -13px #888;
+}
+/**contact**/
+.contact-links{
+    margin-top: 5px; 
+    letter-spacing: 2px;
+    text-align: center;
+}
+.contact-links p{
+    padding-top:3px;
+}
+.contact-links a{
+    color: #888;
+    text-decoration: none;
+}
+.social-medias{
+    margin: 0 0 60px;
+    text-align: center;
+}
+.social-medias div{
+    margin: 10px;
+    display: inline;
+}
+/**formulário de contato**/
+.contact-form{
+    text-align: center;
+    margin: 50px auto;
+}
+input, #message-input{
+    margin: 15px 0;
+    height: 25px;
+    width: 80%;
+    border-bottom: .1px solid #888;
+}
+#message-input{
+    margin: 15px 0;
+    width: 80%;
+    height: 70px;
+    border-bottom: .1px solid #999;
+}
+
+input:read-write, #message-input{
+    color: #777;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 10px 0 16px 0;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+#form-submit{
+    width: 100px;
+    background-color: rgba(0,0,0,0);
+    border: .6px solid #888;
+    color: #666;
+    letter-spacing: 3px;
+    font-family: 'Shadows Into Light Two', cursive;
+    padding: 10px;
+    margin: 40px;
+}
+/**footer**/
+footer h5{
+    text-align: center;
+    font-size: 17px;
+    color: #666;
+    letter-spacing: 1.5px;
+}
+footer p{
+    margin: 40px 0 10px;
+    text-align: justify;
+    color: #999;
+    font-size: 14px;
+    font-family: serif;
+    padding: 0 5%;
+}
+footer a{
+    color: #666;
+    text-decoration: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
